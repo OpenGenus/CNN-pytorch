@@ -16,10 +16,11 @@ The below dependencies are to be installed before running the training model. Fo
 1. Clone the repository using git clone <URL>
 2. Check all the dependencies to be installed.
 3. Train the model on a dataset : python simple_cnn_model.py
-4. Model inference : Once the best model is saved, go ahead and experiment with the model by fine-tuning on new data or different datasets. 
+4. Model inference and evaluation : Once the best model is saved in this path : `saved_model/net_cifar10.pt` , go ahead and experiment with the model by fine-tuning on new data or different datasets. 
 Some examples are given below : 
-```python
+
 i. Load the saved model : 
+```python
 net.load_state_dict(torch.load('net_cifar10.pt'))
 net.eval()  # Set the model to evaluation mode
 print("Model loaded and set to evaluation mode.")
